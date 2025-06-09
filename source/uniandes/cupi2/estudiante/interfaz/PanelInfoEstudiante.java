@@ -1,6 +1,6 @@
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
- * Universidad de los Andes (Bogotá - Colombia) 
- * Departamento de Ingeniería de Sistemas y Computación
+ * Universidad de los Andes (Bogotï¿½ - Colombia) 
+ * Departamento de Ingenierï¿½a de Sistemas y Computaciï¿½n
  * Licenciado bajo el esquema Academic Free License version 2.1
  * 
  * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
@@ -22,7 +22,7 @@ import javax.swing.border.TitledBorder;
 import uniandes.cupi2.estudiante.mundo.Estudiante;
 
 /**
- * Panel con la información del estudiante.
+ * Panel con la informaciï¿½n del estudiante.
  */
 @SuppressWarnings("serial")
 public class PanelInfoEstudiante extends JPanel
@@ -38,7 +38,7 @@ public class PanelInfoEstudiante extends JPanel
     private JLabel lblPromedio;
 
     /**
-     * Etiqueta código.
+     * Etiqueta cï¿½digo.
      */
     private JLabel lblCodigo;
 
@@ -63,7 +63,7 @@ public class PanelInfoEstudiante extends JPanel
     private JTextField txtPromedio;
 
     /**
-     * Campo de texto donde se muestra el código.
+     * Campo de texto donde se muestra el cï¿½digo.
      */
     private JTextField txtCodigo;
 
@@ -77,21 +77,33 @@ public class PanelInfoEstudiante extends JPanel
      */
     private JTextField txtApellido;
     
-    
+    /**
+     * Etiqueta Semestre.
+     */
+    private JLabel lblSemestre;
+
+    /**
+     * Campo de texto donde se muestra el semestre.
+     */
+    private JTextField txtSemestre;
 
     // -----------------------------------------------------------------
     // Constructores
     // -----------------------------------------------------------------
     /**
-     * Crea el panel con la información del estudiante.
+     * Crea el panel con la informaciï¿½n del estudiante.
      */
     public PanelInfoEstudiante( )
     {
-        setBorder( new TitledBorder( "Información del estudiante" ) );
+        setBorder( new TitledBorder( "Informaciï¿½n del estudiante" ) );
         setLayout( new BorderLayout( ) );
 
+        lblSemestre = new JLabel( "Semestre:" );
+        txtSemestre = new JTextField( );
+        txtSemestre.setEditable( false );
+
         JPanel panelAux = new JPanel( );
-        panelAux.setLayout( new GridLayout( 4, 2 ) );
+        panelAux.setLayout( new GridLayout( 5, 2 ) );
         txtCodigo = new JTextField( );
         txtCodigo.setEditable( false );
         txtPromedio = new JTextField( );
@@ -106,7 +118,7 @@ public class PanelInfoEstudiante extends JPanel
         lblApellido = new JLabel( );
 
         lblPromedio.setText( "Promedio:" );
-        lblCodigo.setText( "Código:" );
+        lblCodigo.setText( "Cï¿½digo:" );
         lblNombre.setText( "Nombre:" );
         lblApellido.setText( "Apellido:" );
         panelAux.add( lblCodigo );
@@ -117,6 +129,8 @@ public class PanelInfoEstudiante extends JPanel
         panelAux.add( txtApellido );
         panelAux.add( lblPromedio );
         panelAux.add( txtPromedio );
+        panelAux.add( lblSemestre );
+        panelAux.add( txtSemestre );
 
         lblImagen = new JLabel( );
         ImageIcon icono = new ImageIcon( "./data/estudiante.png" );
@@ -128,11 +142,11 @@ public class PanelInfoEstudiante extends JPanel
     }
 
     // -----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     // -----------------------------------------------------------------
 
     /**
-     * Actualiza al información del panel con la información del estudiante dado.
+     * Actualiza al informaciï¿½n del panel con la informaciï¿½n del estudiante dado.
      * @param pEstudiante Estudiante de los cursos. pEstudiante != null && pEstudiante != "".
      */
     public void actualizar( Estudiante pEstudiante )
@@ -148,6 +162,7 @@ public class PanelInfoEstudiante extends JPanel
         txtCodigo.setText( pEstudiante.darCodigo( ) + "" );
         txtNombre.setText( pEstudiante.darNombre( ) );
         txtApellido.setText( pEstudiante.darApellido( ) );
+        txtSemestre.setText( pEstudiante.darSemestre( ) + "" );
     }
 
 }
