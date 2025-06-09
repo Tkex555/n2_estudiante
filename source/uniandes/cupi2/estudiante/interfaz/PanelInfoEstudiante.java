@@ -95,7 +95,7 @@ public class PanelInfoEstudiante extends JPanel
      */
     public PanelInfoEstudiante( )
     {
-        setBorder( new TitledBorder( "Informaci�n del estudiante" ) );
+        setBorder( new TitledBorder( "Informacion del estudiante" ) );
         setLayout( new BorderLayout( ) );
 
         lblSemestre = new JLabel( "Semestre:" );
@@ -118,7 +118,7 @@ public class PanelInfoEstudiante extends JPanel
         lblApellido = new JLabel( );
 
         lblPromedio.setText( "Promedio:" );
-        lblCodigo.setText( "C�digo:" );
+        lblCodigo.setText( "Codigo:" );
         lblNombre.setText( "Nombre:" );
         lblApellido.setText( "Apellido:" );
         panelAux.add( lblCodigo );
