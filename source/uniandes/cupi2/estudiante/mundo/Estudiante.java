@@ -376,7 +376,9 @@ public class Estudiante
         	return "El estudiante no tiene notas";
         }
         
-        return
+        return "El estudiante " + semestre + 
+        		"con promedio de " +String.format("%2.f", promedio) +
+        		"ganaría un salario de $" + salario + "como monitor."; 
     }
 
     /**
