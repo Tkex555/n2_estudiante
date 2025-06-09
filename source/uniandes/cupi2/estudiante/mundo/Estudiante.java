@@ -93,9 +93,9 @@ public class Estudiante
         codigo = 201612345;
         semestre = 1;
         curso1 = new Curso( "ISIS1204", "APO1", 3, Departamento.SISTEMAS );
-        curso2 = new Curso( "MATE1203", "C�lculo diferencial", 3, Departamento.MATEMATICAS );
-        curso3 = new Curso( "FISI1100", "F�sica 1", 4, Departamento.FISICA );
-        curso4 = new Curso( "BIOL1405", "Biolog�a celular", 4, Departamento.BIOLOGIA );
+        curso2 = new Curso( "MATE1203", "Calculo diferencial", 3, Departamento.MATEMATICAS );
+        curso3 = new Curso( "FISI1100", "Fisica 1", 4, Departamento.FISICA );
+        curso4 = new Curso( "BIOL1405", "Biologia celular", 4, Departamento.BIOLOGIA );
     }
 
     // -----------------------------------------------------------------
@@ -378,7 +378,7 @@ public class Estudiante
         
         return "El estudiante " + semestre + 
         		"con promedio de " +String.format("%.2f", promedio) +
-        		"ganar�a un salario de $" + salario + "como monitor."; 
+        		"ganaria un salario de $" + salario + "como monitor."; 
     }
 
     /**

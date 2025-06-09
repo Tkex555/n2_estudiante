@@ -144,7 +144,7 @@ public class InterfazEstudiante extends JFrame
 
     /**
      * Asigna la nota de un curso.
-     * @param pCodigo C�digo del curso que se le va a asignar la nota. pCodigo != null && pCodigo != "".
+     * @param pCodigo Codigo del curso que se le va a asignar la nota. pCodigo != null && pCodigo != "".
      */
     public void asignarNotaCurso( String pCodigo )
     {
@@ -174,7 +174,7 @@ public class InterfazEstudiante extends JFrame
             }
             catch( NumberFormatException e )
             {
-                JOptionPane.showMessageDialog( this, "Debe ingresar un valor num�rico.", "Asignar nota", JOptionPane.ERROR_MESSAGE );
+                JOptionPane.showMessageDialog( this, "Debe ingresar un valor numerico.", "Asignar nota", JOptionPane.ERROR_MESSAGE );
             }
         }
     }
@@ -195,11 +195,11 @@ public class InterfazEstudiante extends JFrame
         {
             if( estaPrueba )
             {
-                JOptionPane.showMessageDialog( this, "El estudiante se encuentra en prueba acad�mica (promedio < 3.25).", "Estudiante en prueba", JOptionPane.INFORMATION_MESSAGE );
+                JOptionPane.showMessageDialog( this, "El estudiante se encuentra en prueba academica (promedio < 3.25).", "Estudiante en prueba", JOptionPane.INFORMATION_MESSAGE );
             }
             else
             {
-                JOptionPane.showMessageDialog( this, "El estudiante no se encuentra en prueba acad�mica (promedio >= 3.25).", "Estudiante en prueba", JOptionPane.INFORMATION_MESSAGE );
+                JOptionPane.showMessageDialog( this, "El estudiante no se encuentra en prueba academica (promedio >= 3.25).", "Estudiante en prueba", JOptionPane.INFORMATION_MESSAGE );
             }
         }
 
@@ -247,7 +247,7 @@ public class InterfazEstudiante extends JFrame
         }
         else
         {
-            JOptionPane.showMessageDialog( this, "Ya existe un curso con c�digo " + pNuevoCodigo + ".", "Cambiar curso", JOptionPane.ERROR_MESSAGE );
+            JOptionPane.showMessageDialog( this, "Ya existe un curso con codigo " + pNuevoCodigo + ".", "Cambiar curso", JOptionPane.ERROR_MESSAGE );
         }
     }
 

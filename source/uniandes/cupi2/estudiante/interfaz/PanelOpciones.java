@@ -109,17 +109,17 @@ public class PanelOpciones extends JPanel implements ActionListener
         btnBeca.addActionListener( this );
         add( btnBeca );
 
-        btnPrueba = new JButton( "Prueba acad�mica" );
+        btnPrueba = new JButton( "Prueba academica" );
         btnPrueba.setActionCommand( PRUEBA );
         btnPrueba.addActionListener( this );
         add( btnPrueba );
 
-        btnOpcion1 = new JButton( "Opci�n 1" );
+        btnOpcion1 = new JButton( "Opcion 1" );
         btnOpcion1.setActionCommand( OPCION1 );
         btnOpcion1.addActionListener( this );
         add( btnOpcion1 );
 
-        btnOpcion2 = new JButton( "Opci�n 2" );
+        btnOpcion2 = new JButton( "Opcion 2" );
         btnOpcion2.setActionCommand( OPCION2 );
         btnOpcion2.addActionListener( this );
         add( btnOpcion2 );
