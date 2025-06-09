@@ -359,6 +359,44 @@ public class Estudiante
 
         return salario;
     }
+    
+    public double mejorNota()
+    {
+        double notaMaxima = -1;
+        
+        if(curso1.estaCalificado())
+        {
+            notaMaxima = curso1.darNota();
+        }
+        
+        if(curso2.estaCalificado())
+        {
+            double nota2 = curso2.darNota();
+            if(nota2 > notaMaxima || notaMaxima == -1)
+            {
+                notaMaxima = nota2;
+            }
+        }
+        
+        if(curso3.estaCalificado())
+        {
+            double nota3 = curso3.darNota();
+            if(nota3 > notaMaxima || notaMaxima == -1)
+            {
+                notaMaxima = nota3;
+            }
+        }
+        if(curso4.estaCalificado())
+        {
+            double nota4 = curso4.darNota();
+            if(nota4 > notaMaxima || notaMaxima == -1)
+            {
+                notaMaxima = nota4;
+            }
+        }
+        
+        return notaMaxima;
+    }
     // -----------------------------------------------------------------
     // Puntos de Extensi�n
     // -----------------------------------------------------------------
