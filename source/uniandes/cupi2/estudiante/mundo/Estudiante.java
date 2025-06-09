@@ -334,6 +334,31 @@ public class Estudiante
         return asigno;
     }
 
+    public int calcularSalario( )
+    {
+        double promedio = calcularPromedioEstudiante();
+        int salario = 0;
+
+        if(semestre >= 1 && semestre <= 3) {
+            if(promedio >= 4.0) {
+                salario = 25000;
+            } else {
+                salario = 15000;
+            }
+        }
+        else if(semestre >= 4 && semestre <= 7) {
+            if(promedio >= 4.5) {
+                salario = 35000;
+            } else {
+                salario = 25000;
+            }
+        }
+        else if(semestre >= 8) {
+            salario = 50000;
+        }
+
+        return salario;
+    }
     // -----------------------------------------------------------------
     // Puntos de Extensión
     // -----------------------------------------------------------------
