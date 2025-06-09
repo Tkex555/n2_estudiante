@@ -165,7 +165,7 @@ public class Estudiante
         return curso4;
     }
     
-    public darSemestre() 
+    public Semestre darSemestre() 
     {
     	return semestre;
     }

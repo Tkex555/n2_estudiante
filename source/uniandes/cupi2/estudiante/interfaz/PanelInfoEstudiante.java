@@ -76,6 +76,8 @@ public class PanelInfoEstudiante extends JPanel
      * Campo de texto donde se muestra el apellido.
      */
     private JTextField txtApellido;
+    
+    
 
     // -----------------------------------------------------------------
     // Constructores
