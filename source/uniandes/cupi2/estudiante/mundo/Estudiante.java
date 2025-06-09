@@ -170,7 +170,7 @@ public class Estudiante
     	return semestre;
     }
     
-    public CambiarSemestre (int pSemestre ) 
+    public void CambiarSemestre (int pSemestre ) 
     {
     	semestre = pSemestre;
     }
