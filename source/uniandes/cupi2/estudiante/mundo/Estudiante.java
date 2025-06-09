@@ -359,6 +359,15 @@ public class Estudiante
 
         return salario;
     }
+    
+    public double mejorNota()
+    {
+        double notaMaxima = -1;
+        
+        if(curso1.estaCalificado())
+        {
+            notaMaxima = curso1.darNota();
+        }
     // -----------------------------------------------------------------
     // Puntos de Extensi�n
     // -----------------------------------------------------------------
