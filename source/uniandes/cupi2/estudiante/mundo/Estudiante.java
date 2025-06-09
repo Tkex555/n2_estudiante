@@ -369,7 +369,16 @@ public class Estudiante
      */
     public String metodo1( )
     {
-        return "Respuesta 1";
+        int salario = calcularSalario();
+        double promedio = calcularPromedioEstudiante();
+        
+        if(promedio == 1) {
+        	return "El estudiante no tiene notas";
+        }
+        
+        return "El estudiante " + semestre + 
+        		"con promedio de " +String.format("%2.f", promedio) +
+        		"ganaría un salario de $" + salario + "como monitor."; 
     }
 
     /**
