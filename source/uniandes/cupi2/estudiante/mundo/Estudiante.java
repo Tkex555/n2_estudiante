@@ -386,6 +386,17 @@ public class Estudiante
                 notaMaxima = nota3;
             }
         }
+        if(curso4.estaCalificado())
+        {
+            double nota4 = curso4.darNota();
+            if(nota4 > notaMaxima || notaMaxima == -1)
+            {
+                notaMaxima = nota4;
+            }
+        }
+        
+        return notaMaxima;
+    }
     // -----------------------------------------------------------------
     // Puntos de Extensi�n
     // -----------------------------------------------------------------
