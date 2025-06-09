@@ -69,6 +69,8 @@ public class Estudiante
      * Curso 4 del estudiante.
      */
     private Curso curso4;
+    
+    private int semestre;
 
     // -----------------------------------------------------------------
     // Constructores
@@ -86,9 +88,10 @@ public class Estudiante
      */
     public Estudiante( )
     {
-        nombre = "Juliana";
-        apellido = "Ramírez";
+        nombre = "Juan";
+        apellido = "Castro";
         codigo = 201612345;
+        semestre = 1;
         curso1 = new Curso( "ISIS1204", "APO1", 3, Departamento.SISTEMAS );
         curso2 = new Curso( "MATE1203", "Cálculo diferencial", 3, Departamento.MATEMATICAS );
         curso3 = new Curso( "FISI1100", "Física 1", 4, Departamento.FISICA );
@@ -160,6 +163,16 @@ public class Estudiante
     public Curso darCurso4( )
     {
         return curso4;
+    }
+    
+    public Semestre darSemestre( ) 
+    {
+    	return semestre;
+    }
+    
+    public CambiarSemestre (int pSemestre ) 
+    {
+    	semestre = pSemestre;
     }
 
     /**
