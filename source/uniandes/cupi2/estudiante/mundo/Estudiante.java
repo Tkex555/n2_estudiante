@@ -346,6 +346,13 @@ public class Estudiante
                 salario = 15000;
             }
         }
+        else if(semestre >= 4 && semestre <= 7) {
+            if(promedio >= 4.5) {
+                salario = 35000;
+            } else {
+                salario = 25000;
+            }
+        }
     // -----------------------------------------------------------------
     // Puntos de Extensión
     // -----------------------------------------------------------------
