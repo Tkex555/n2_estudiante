@@ -165,12 +165,12 @@ public class Estudiante
         return curso4;
     }
     
-    public Semestre darSemestre( ) 
+    public darSemestre() 
     {
     	return semestre;
     }
     
-    public void CambiarSemestre (int pSemestre ) 
+    public void cambiarSemestre (int pSemestre ) 
     {
     	semestre = pSemestre;
     }
